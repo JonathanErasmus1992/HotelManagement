@@ -26,5 +26,8 @@
         <module name="domainassignment" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="domainassignment" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
