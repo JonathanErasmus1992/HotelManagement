@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestSuite">
+    <test name="CustomerBookingRep">
+        <classes>
+            <class name ="hotelmanagement.repository.TestCustomerBookingRepo" />
+        </classes>
+    </test>
+    <test name="BookingRepo">
+        <classes>
+            <class name="hotelmanagement.repository.TestBookingRepo" />
+        </classes>
+    </test>
+    <test name="CustomerAddressRepo">
+        <classes>
+            <class name="hotelmanagement.repository.TestCustomerAddressRepo" />
+        </classes>
+    </test>
+    <test name="CustomerContactRepo">
+        <classes>
+            <class name="hotelmanagement.repository.TestCustomerContactRepo" />
+        </classes>
+    </test>
+    <test name="CustomerRepo">
+        <classes>
+            <class name="hotelmanagement.repository.TestCustomerRepo" />
+        </classes>
+    </test>
+    <test name="DatesRepo">
+        <classes>
+            <class name="hotelmanagement.repository.TestDatesRepo" />
+        </classes>
+    </test>
+    <test name="EmployeeAddressRepo">
+        <classes>
+            <class name="hotelmanagement.repository.TestEmployeeAddressRepo" />
+        </classes>
+    </test>
+    <test name="EmployeeContactRepo">
+        <classes>
+            <class name="hotelmanagement.repository.TestEmployeeContactRepo" />
+        </classes>
+    </test>
+    <test name="EmployeeDemographicsRepo">
+        <classes>
+            <class name="hotelmanagement.repository.TestEmployeeDemographicsRepo" />
+        </classes>
+    </test>
+    <test name="EmployeeRepo">
+        <classes>
+            <class name="hotelmanagement.repository.TestEmployeeRepo" />
+        </classes>
+    </test>
+    <test name="JobRepo">
+        <classes>
+            <class name="hotelmanagement.repository.TestJobRepo" />
+        </classes>
+    </test>
+    <test name="ManagerRepo">
+        <classes>
+            <class name="hotelmanagement.repository.TestManagerRepo" />
+        </classes>
+    </test>
+    <test name="RoomRepo">
+        <classes>
+            <class name="hotelmanagement.repository.TestRoomRepo" />
+        </classes>
+    </test>
+    <test name="ServicesAndAddOnsRepo">
+        <classes>
+            <class name="hotelmanagement.repository.TestServicesAndAddOnsRepo" />
+        </classes>
+    </test>
+    <test name="UserRepo">
+        <classes>
+            <class name="hotelmanagement.repository.TestUsersRepo" />
+        </classes>
+    </test>
+</suite>
