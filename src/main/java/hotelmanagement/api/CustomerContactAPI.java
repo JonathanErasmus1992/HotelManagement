@@ -21,7 +21,7 @@ public class CustomerContactAPI {
     @Autowired
     CustomerContactService customerContactService;
 
-    @RequestMapping(value = "/ccontact/all", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/all", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<CustomerContact>> getAllCustomerContacts()
     {
         List<CustomerContact> customerContactList = customerContactService.getAllCustomerContacts();
@@ -29,7 +29,7 @@ public class CustomerContactAPI {
         return new ResponseEntity<List<CustomerContact>>(customerContactList, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/ccontact/update", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/update", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> updateCustomerContact(@RequestParam String cellNumber,
                                                          @RequestParam String homeNumber,
                                                          @RequestParam String emailAddress,

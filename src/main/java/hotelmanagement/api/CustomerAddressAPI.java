@@ -20,14 +20,14 @@ public class CustomerAddressAPI {
     @Autowired
     private CustomerAddressService customerAddressService;
 
-    @RequestMapping(value = "/caddress/all", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "all", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<CustomerAddress>> getAllCustomerAddresses()
     {
         List<CustomerAddress> customerAddressList = customerAddressService.getAllCustomerAddresses();
 
         return new ResponseEntity<List<CustomerAddress>>(customerAddressList, HttpStatus.OK);
     }
-    @RequestMapping(value = "/caddress/update", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/update", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> updateCustomerAddress(@RequestParam String physicalAddress,
                                                          @RequestParam String postalAddress,
                                                          @RequestParam String postalCode)

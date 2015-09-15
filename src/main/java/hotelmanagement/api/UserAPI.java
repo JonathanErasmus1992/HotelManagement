@@ -28,7 +28,7 @@ public class UserAPI {
         return new ResponseEntity<List<User>>(userList, HttpStatus.OK);
     }
     //Return a successful log in
-    @RequestMapping(value = "/user/login", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/login", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> getUser(@RequestParam String emailAddress,
                                           @RequestParam String password)
     {
@@ -40,7 +40,7 @@ public class UserAPI {
     }
 
     //Create a new user
-    @RequestMapping(value = "/user/add", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/add", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> newUser(@RequestParam String emailAddress,
                                            @RequestParam String password,
                                            @RequestParam String recoveryQ,
@@ -55,7 +55,7 @@ public class UserAPI {
     }
 
     //Return forgotten password id
-    @RequestMapping(value = "/user/forgotpassword", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/forgotpassword", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Long> forgotPassword(@RequestParam String emailAddress)
     {
         Long userFound = 0L;
@@ -65,7 +65,7 @@ public class UserAPI {
         return new ResponseEntity<Long>(userFound, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/user/recoveryquestion", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/recoveryquestion", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> recoveryQuestion(@RequestParam Long userID)
     {
         String strRecoveryQ = "";
@@ -75,7 +75,7 @@ public class UserAPI {
         return new ResponseEntity<String>(strRecoveryQ, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/user/recoveryanswer", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/recoveryanswer", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> recoveryAnswer(@RequestParam String recoveryAnswer,
                                                   @RequestParam Long userID)
     {
@@ -86,7 +86,7 @@ public class UserAPI {
         return new ResponseEntity<Boolean>(blnCorrectAnswer, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/user/changepassword", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/changepassword", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> changePassword(@RequestParam String password,
                                                   @RequestParam Long userID)
     {

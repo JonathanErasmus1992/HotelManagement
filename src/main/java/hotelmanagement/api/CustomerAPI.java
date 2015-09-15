@@ -20,7 +20,7 @@ public class CustomerAPI {
     @Autowired
     private CustomerService customerService;
 
-    @RequestMapping(value = "/customer/all", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "all", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<Customer>> getAllCustomers()
     {
         List<Customer> customerList = customerService.getAllCustomers();
@@ -28,7 +28,7 @@ public class CustomerAPI {
         return new ResponseEntity<List<Customer>>(customerList, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/customer/create", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/create", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> createCustomer(@RequestParam String idNumber,
                                                   @RequestParam String firstName,
                                                   @RequestParam String lastName,
@@ -47,7 +47,7 @@ public class CustomerAPI {
         return new ResponseEntity<Boolean>(blnCustomerCreated, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/customer/update", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/update", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> updateCustomer(@RequestParam String idNumber,
                                                   @RequestParam String firstName,
                                                   @RequestParam String lastName)

@@ -22,7 +22,7 @@ public class MakeBookingAPI {
     @Autowired
     private CustomerBookingService customerBookingService;
 
-    @RequestMapping(value = "/makebooking/all", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/all", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<CustomerBooking>> getAllCustomerBookings()
     {
         List<CustomerBooking> customerBookingList = customerBookingService.getAllCustomerBookings();
@@ -30,7 +30,7 @@ public class MakeBookingAPI {
         return new ResponseEntity<List<CustomerBooking>>(customerBookingList, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/makebooking/create", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/create", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> createCustomerBooking(@RequestParam String referenceNumber,
                                                          @RequestParam String idNumber,
                                                          @RequestParam String firstNames,

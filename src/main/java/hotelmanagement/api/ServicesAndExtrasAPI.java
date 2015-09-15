@@ -21,7 +21,7 @@ public class ServicesAndExtrasAPI {
     @Autowired
     ServicesAndAddOnsService servicesAndAddOnsService;
 
-    @RequestMapping(value = "/servicesandextras/all", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/all", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<ServicesAndAddOns>> getAllServicesAndAddOns()
     {
         List<ServicesAndAddOns> servicesAndAddOnsList = servicesAndAddOnsService.getAllServicesAndAddOns();
@@ -29,7 +29,7 @@ public class ServicesAndExtrasAPI {
         return new ResponseEntity<List<ServicesAndAddOns>>(servicesAndAddOnsList, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/servicesandextras/create", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/create", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> createServiceAndExtra(@RequestParam int SEID,
                                                          @RequestParam String extraName,
                                                          @RequestParam double price)
@@ -41,7 +41,7 @@ public class ServicesAndExtrasAPI {
         return new ResponseEntity<Boolean>(blnServiceAndExtraCreated, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/servicesandextras/update", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/update", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> updateServiceAndExtra(@RequestParam int SEID,
                                                          @RequestParam String extraName,
                                                          @RequestParam double price)
@@ -53,7 +53,7 @@ public class ServicesAndExtrasAPI {
         return new ResponseEntity<Boolean>(blnServiceAndExtraUpdated, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/servicesandextras/delete", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/delete", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> deleteServiceAndExtra(@RequestParam int SEID)
     {
         boolean blnServiceAndExtraDeleted = false;
