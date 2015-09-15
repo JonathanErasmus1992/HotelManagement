@@ -153,8 +153,8 @@ public class CustomerServiceImpl implements CustomerService {
 
             Customer newCustomer = new Customer.Builder(customer.getIDNumber())
                     .ID(customerID)
-                    .customer_firstnames("Jon")
-                    .customer_lastname("David")
+                    .customer_firstnames(firstNames)
+                    .customer_lastname(lastName)
                     //.customer_address(newCustomerAddress)
                     //.customer_contact(newCustomerContact)
                     .build();

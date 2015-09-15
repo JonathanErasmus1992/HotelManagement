@@ -65,6 +65,92 @@ public class BookingServiceImpl implements BookingService{
     }
 
     @Override
+    public boolean updateBooking(String referenceNumber, int roomNumber, int SEID)
+    {
+        Long bookingID = 0L;
+        boolean blnUpdateCustomerBooking = false;
+        boolean blnRoomFound = false;
+        boolean blnServAndExtraFound = false;
+        int indexRoom = -1;
+        int indexServiceAndExtra = -1;
+
+        List<Room> rooms = new ArrayList<Room>();
+        List<ServicesAndAddOns> servicesAndAddOnses = new ArrayList<ServicesAndAddOns>();
+
+        Date hireDate = new Date();
+
+        Iterable<Booking> bookings = repositoryBooking.findAll();
+        for (Booking booking : bookings) {
+            if(booking.getReferenceNumber().equalsIgnoreCase(referenceNumber))
+            {
+                bookingID = booking.getID();
+                rooms = booking.getRooms();
+                servicesAndAddOnses = booking.getServicesAndAddOns();
+                hireDate = booking.getDate();
+            }
+        }
+
+        for (Room room: rooms)
+        {
+            if(room.getRoomNumber() == roomNumber)
+            {
+                blnRoomFound = true;
+            }
+        }
+
+        for (ServicesAndAddOns servicesAndAddOn: servicesAndAddOnses)
+        {
+            if(servicesAndAddOn.getServExtraID() == SEID)
+            {
+                blnServAndExtraFound = true;
+            }
+        }
+
+        if(blnRoomFound == true)
+        {
+            for(int i = 0; i < rooms.size(); i++)
+            {
+                if(rooms.get(i).getRoomNumber() == roomNumber)
+                {
+                    indexRoom = i;
+                }
+            }
+
+            rooms.remove(indexRoom);
+        }
+
+        if(blnServAndExtraFound == true)
+        {
+            for(int i = 0; i < servicesAndAddOnses.size(); i++)
+            {
+                if(servicesAndAddOnses.get(i).getServExtraID() == SEID)
+                {
+                    indexServiceAndExtra = i;
+                }
+            }
+
+            servicesAndAddOnses.remove(indexServiceAndExtra);
+        }
+
+        if ((blnRoomFound == true) || (blnServAndExtraFound == true))
+        {
+            blnUpdateCustomerBooking = true;
+        }
+
+        if (blnUpdateCustomerBooking == true)
+        {
+            Booking newBooking = new Booking.Builder(referenceNumber)
+                    .ID(bookingID)
+                    .rooms(rooms)
+                    .services_and_addons(servicesAndAddOnses)
+                    .build();
+            repositoryBooking.save(newBooking);
+        }
+
+        return blnUpdateCustomerBooking;
+    }
+
+    @Override
     public boolean deleteBooking(String referenceNumber) {
         Long bookingID = 0L;
         boolean blnDeleteCustomerBooking = false;

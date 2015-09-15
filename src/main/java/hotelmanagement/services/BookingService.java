@@ -13,9 +13,10 @@ import java.util.List;
 public interface BookingService {
     public List<Booking> getAllBookings();
     public boolean createBooking(String referenceNumber, List<Room>roomList, List<ServicesAndAddOns> servicesAndAddOnsList, Date hireDate);
+    public boolean updateBooking(String referenceNumber, int roomNumber, int SEID);
     public boolean deleteBooking(String referenceNumber);
 }
 /*
     No updating just remove room from room list
-    Same with Add Ons
+    Same with Add Ons of the booking
  */

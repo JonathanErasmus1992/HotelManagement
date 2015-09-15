@@ -16,6 +16,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -25,8 +26,8 @@ public class TestBookingService extends AbstractTestNGSpringContextTests{
     @Autowired
     private BookingService service;
     private List<Booking> bookingList;
-    private List<Room> roomList;
-    private List<ServicesAndAddOns> servicesAndAddOnsList;
+    private List<Room> roomList = new ArrayList<Room>();
+    private List<ServicesAndAddOns> servicesAndAddOnsList = new ArrayList<ServicesAndAddOns>();
     private Date hireDate = new Date();
     private Long id;
 
@@ -49,10 +50,33 @@ public class TestBookingService extends AbstractTestNGSpringContextTests{
     @Test
     public void testCreateBooking()
     {
+        /*Room room = new Room.Builder(1738)
+                .room_type("Couple Suite")
+                .room_view("Ocean")
+                .room_price(300.00)
+                .build();
+
+        ServicesAndAddOns servicesAndAddOns = new ServicesAndAddOns.Builder(1738)
+                .extra_name("Horror Horror and Horror")
+                .price_added(200.00)
+                .build();
+
+        roomList.add(room);
+        servicesAndAddOnsList.add(servicesAndAddOns);
         //Must change the first field to check if test passes or fails as
         //duplicate email addresses are not allowed
         //switch between assertFalse and assertTrue
-        //Assert.assertFalse(service.createBooking("777", roomList, servicesAndAddOnsList, hireDate));
+        Assert.assertTrue(service.createBooking("777", roomList, servicesAndAddOnsList, hireDate));
+        */
+    }
+
+    @Test
+    public void testUpdateBooking()
+    {
+        //Must change the first field to check if test passes or fails as
+        //duplicate email addresses are not allowed
+        //switch between assertFalse and assertTrue
+        //Assert.assertFalse(service.updateBooking("777", 1738, 1738));
     }
 
     @Test
