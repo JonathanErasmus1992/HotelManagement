@@ -30,7 +30,7 @@ public class ServicesAndExtrasAPI {
     }
 
     @RequestMapping(value = "/create", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Boolean> createServiceAndExtra(@RequestParam int SEID,
+    public ResponseEntity<Void> createServiceAndExtra(@RequestParam int SEID,
                                                          @RequestParam String extraName,
                                                          @RequestParam double price)
     {
@@ -38,7 +38,7 @@ public class ServicesAndExtrasAPI {
 
         blnServiceAndExtraCreated = servicesAndAddOnsService.createServicesAndAddOns(SEID, extraName, price);
 
-        return new ResponseEntity<Boolean>(blnServiceAndExtraCreated, HttpStatus.OK);
+        return new ResponseEntity<Void>(HttpStatus.OK);
     }
 
     @RequestMapping(value = "/update", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
