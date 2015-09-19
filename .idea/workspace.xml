@@ -2,79 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25869232-61a6-4ab1-847d-656cbea27d2e" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\JonathanE\Downloads\HMBackend\target\classes\application.properties" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/App.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/App.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/AppTest.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/AppTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/api/BookingAPI.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/api/BookingAPI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/BookingFactory.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/BookingFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/services/Impl/BookingServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/services/Impl/BookingServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/api/CustomerAPI.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/api/CustomerAPI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/api/CustomerAddressAPI.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/api/CustomerAddressAPI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/CustomerAddressFactory.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/CustomerAddressFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/services/Impl/CustomerAddressServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/services/Impl/CustomerAddressServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/CustomerBookingFactory.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/CustomerBookingFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/services/Impl/CustomerBookingServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/services/Impl/CustomerBookingServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/api/CustomerContactAPI.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/api/CustomerContactAPI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/CustomerContactFactory.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/CustomerContactFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/services/Impl/CustomerContactServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/services/Impl/CustomerContactServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/CustomerFactory.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/CustomerFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/services/Impl/CustomerServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/services/Impl/CustomerServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/DatesFactory.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/DatesFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/EmployeeAddressFactory.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/EmployeeAddressFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/EmployeeContactFactory.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/EmployeeContactFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/EmployeeDemographicsFactory.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/EmployeeDemographicsFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/EmployeeFactory.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/EmployeeFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/services/Impl/EmployeeServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/services/Impl/EmployeeServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/JobFactory.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/JobFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/api/MakeBookingAPI.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/api/MakeBookingAPI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/ManagerFactory.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/ManagerFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/api/RoomAPI.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/api/RoomAPI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/RoomFactory.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/RoomFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/services/Impl/RoomServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/services/Impl/RoomServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/ServicesAndAddOnsFactory.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/ServicesAndAddOnsFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/services/Impl/ServicesAndAddOnsServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/services/Impl/ServicesAndAddOnsServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/api/ServicesAndExtrasAPI.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/api/ServicesAndExtrasAPI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestBookingFactory.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestBookingFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestBookingRepo.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestBookingRepo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/services/TestBookingService.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/services/TestBookingService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestCustomerAddressFactory.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestCustomerAddressFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestCustomerAddressRepo.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestCustomerAddressRepo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/services/TestCustomerAddressService.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/services/TestCustomerAddressService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestCustomerBookingFactory.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestCustomerBookingFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestCustomerBookingRepo.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestCustomerBookingRepo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestCustomerContactFactory.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestCustomerContactFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestCustomerContactRepo.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestCustomerContactRepo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/services/TestCustomerContactService.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/services/TestCustomerContactService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestCustomerFactory.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestCustomerFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestCustomerRepo.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestCustomerRepo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/services/TestCustomerService.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/services/TestCustomerService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestEmployeeAddressFactory.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestEmployeeAddressFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestEmployeeAddressRepo.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestEmployeeAddressRepo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestEmployeeContactFactory.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestEmployeeContactFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestEmployeeContactRepo.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestEmployeeContactRepo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestEmployeeDemographicsFactory.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestEmployeeDemographicsFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestEmployeeDemographicsRepo.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestEmployeeDemographicsRepo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestEmployeeFactory.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestEmployeeFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestEmployeeRepo.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestEmployeeRepo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestJobFactory.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestJobFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestJobRepo.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestJobRepo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestManagerFactory.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestManagerFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestManagerRepo.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestManagerRepo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestRoomFactory.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestRoomFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestRoomRepo.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestRoomRepo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/services/TestRoomServices.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/services/TestRoomServices.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestServicesAndAddOnsFactory.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestServicesAndAddOnsFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestServicesAndAddOnsRepo.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestServicesAndAddOnsRepo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/services/TestServicesAndAddOnsService.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/services/TestServicesAndAddOnsService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestUserFactory.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/domain/TestUserFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/services/TestUserService.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/services/TestUserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestUsersRepo.class" afterPath="$PROJECT_DIR$/target/test-classes/hotelmanagement/repository/TestUsersRepo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/api/UserAPI.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/api/UserAPI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/UserFactory.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/conf/UserFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hotelmanagement/services/Impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/hotelmanagement/services/Impl/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hotelmanagement/api/ServicesAndExtrasAPI.java" afterPath="$PROJECT_DIR$/src/main/java/hotelmanagement/api/ServicesAndExtrasAPI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.openshift/action_hooks/deploy" afterPath="$PROJECT_DIR$/.openshift/action_hooks/deploy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.xml" afterPath="$PROJECT_DIR$/settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.openshift/action_hooks/start" afterPath="$PROJECT_DIR$/.openshift/action_hooks/start" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.openshift/action_hooks/stop" afterPath="$PROJECT_DIR$/.openshift/action_hooks/stop" />
     </list>
     <ignored path="domainassignment.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -110,101 +42,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <file leaf-file-name="deploy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.openshift/action_hooks/deploy">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
+              <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestBookingRepo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/hotelmanagement/repository/TestBookingRepo.java">
+      <file leaf-file-name="start" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.openshift/action_hooks/start">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestCustomerAddressRepo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/hotelmanagement/repository/TestCustomerAddressRepo.java">
+      <file leaf-file-name="stop" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.openshift/action_hooks/stop">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="54" column="32" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
+              <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestCustomerContactRepo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/hotelmanagement/repository/TestCustomerContactRepo.java">
+      <file leaf-file-name="settings.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/settings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestEmployeeDemographicsRepo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/hotelmanagement/repository/TestEmployeeDemographicsRepo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hotelmanagement/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BookingAPI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hotelmanagement/api/BookingAPI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserAPI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hotelmanagement/api/UserAPI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="46" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServicesAndExtrasAPI.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hotelmanagement/api/ServicesAndExtrasAPI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.67460316">
-              <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testing.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/testing.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.08292683">
+              <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -260,20 +132,20 @@
         <option value="$PROJECT_DIR$/src/main/java/hotelmanagement/api/MakeBookingAPI.java" />
         <option value="$PROJECT_DIR$/src/main/java/hotelmanagement/api/RoomAPI.java" />
         <option value="$PROJECT_DIR$/src/main/java/hotelmanagement/api/UserAPI.java" />
-        <option value="$PROJECT_DIR$/.openshift/action_hooks/deploy" />
-        <option value="$PROJECT_DIR$/.openshift/action_hooks/start" />
-        <option value="$PROJECT_DIR$/.openshift/action_hooks/stop" />
         <option value="$PROJECT_DIR$/settings" />
-        <option value="$PROJECT_DIR$/settings.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/hotelmanagement/services/TestCustomerAddressService.java" />
         <option value="$PROJECT_DIR$/src/test/java/hotelmanagement/services/TestCustomerContactService.java" />
         <option value="$PROJECT_DIR$/src/test/java/hotelmanagement/services/TestRoomServices.java" />
         <option value="$PROJECT_DIR$/src/test/java/hotelmanagement/services/TestServicesAndAddOnsService.java" />
         <option value="$PROJECT_DIR$/src/test/java/hotelmanagement/services/TestUserService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/hotelmanagement/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/hotelmanagement/api/ServicesAndExtrasAPI.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/.openshift/action_hooks/deploy" />
+        <option value="$PROJECT_DIR$/.openshift/action_hooks/start" />
+        <option value="$PROJECT_DIR$/.openshift/action_hooks/stop" />
+        <option value="$PROJECT_DIR$/settings.xml" />
       </list>
     </option>
   </component>
@@ -301,8 +173,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="1040" />
+    <option name="width" value="1040" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -329,6 +201,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -421,8 +295,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
@@ -489,14 +361,6 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="java">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="hotelmanagement">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
@@ -507,23 +371,7 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="main">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="java">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="hotelmanagement">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="api">
+            <PATH_ELEMENT USER_OBJECT=".openshift/action_hooks">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -553,7 +401,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
@@ -1070,24 +918,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1040" extended-state="0" />
+    <frame x="-8" y="-8" width="1040" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2132653" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32706767" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928804" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3337104" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25565612" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918552" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21359223" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25510204" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918552" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1096,9 +941,12 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892057" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32706767" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3337104" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280543" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1326,25 +1174,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.openshift/action_hooks/stop">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.openshift/action_hooks/start">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="121" selection-start-line="3" selection-start-column="121" selection-end-line="3" selection-end-column="121" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/hotelmanagement/services/TestBookingService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16588785">
           <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1359,7 +1192,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.84345794">
           <caret line="89" column="10" selection-start-line="89" selection-start-column="10" selection-end-line="89" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1375,7 +1207,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.83411217">
           <caret line="65" column="10" selection-start-line="65" selection-start-column="10" selection-end-line="65" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1383,7 +1214,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8212617">
           <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1391,7 +1221,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14602804">
           <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1400,21 +1229,6 @@
         <state vertical-scroll-proportion="0.12616822">
           <caret line="74" column="48" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="48" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.039719626">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.openshift/action_hooks/deploy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43691587">
-          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -1430,15 +1244,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13901868">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1446,7 +1251,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1454,7 +1261,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="54" column="32" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1462,7 +1271,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1470,7 +1281,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1500,8 +1313,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hotelmanagement/api/ServicesAndExtrasAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67460316">
+        <state vertical-scroll-proportion="0.0">
           <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9536585">
+          <caret line="23" column="79" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.openshift/action_hooks/deploy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.openshift/action_hooks/start">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.openshift/action_hooks/stop">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08292683">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
           <folding />
         </state>
       </provider>
