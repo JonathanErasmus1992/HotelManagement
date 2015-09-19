@@ -33,7 +33,7 @@ public class BookingAPI {
 
     //Create a new booking. Booking can only be updated by deleting specific rooms or services from their
     //respective lists
-    @RequestMapping(value = "/create", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/create", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> createBooking(@RequestParam String referenceNumber,
                                                  @RequestParam List<Room> roomList,
                                                  @RequestParam List<ServicesAndAddOns> servicesAndAddOnsList,
@@ -48,7 +48,7 @@ public class BookingAPI {
 
     //Update booking only allowed to remove Rooms
     //Or remove ServiceAndExtras from the Booking lists
-    @RequestMapping(value = "/update", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/update", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> updateBooking(@RequestParam String referenceNumber,
                                                  @RequestParam int roomNumber,
                                                  @RequestParam int SEID)
@@ -62,7 +62,7 @@ public class BookingAPI {
     }
 
     //Delete Booking
-    @RequestMapping(value = "/delete", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/delete", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> deleteBooking(@RequestParam String referenceNumber)
     {
         boolean blnDeleteBooking = false;

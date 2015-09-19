@@ -29,7 +29,7 @@ public class RoomAPI {
         return new ResponseEntity<List<Room>>(roomList, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/create", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/create", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> createRoom(@RequestParam int roomNumber,
                                               @RequestParam String roomType,
                                               @RequestParam String roomView,
@@ -42,7 +42,7 @@ public class RoomAPI {
         return new ResponseEntity<Boolean>(blnRoomCreated, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/update", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/update", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> updateRoom(@RequestParam int roomNumber,
                                               @RequestParam String roomType,
                                               @RequestParam String roomView,
@@ -55,7 +55,7 @@ public class RoomAPI {
         return new ResponseEntity<Boolean>(blnRoomUpdated, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/delete", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/delete", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> deleteRoom(@RequestParam int roomNumber)
     {
         boolean blnRoomDeleted = false;

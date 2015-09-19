@@ -27,7 +27,7 @@ public class CustomerAddressAPI {
 
         return new ResponseEntity<List<CustomerAddress>>(customerAddressList, HttpStatus.OK);
     }
-    @RequestMapping(value = "/update", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/update", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> updateCustomerAddress(@RequestParam String physicalAddress,
                                                          @RequestParam String postalAddress,
                                                          @RequestParam String postalCode)

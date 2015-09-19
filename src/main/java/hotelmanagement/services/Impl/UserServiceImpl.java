@@ -104,59 +104,95 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Long ForgottenPassword(String emailAddress) {
+    public boolean ForgottenPassword(String emailAddress) {
 
-        Long userID = 0L;
         int count = 0;
-        boolean blnUserFound;
+        boolean blnUserFound = false;
         Iterable<User> users = repositoryUser.findAll();
         for (User user : users) {
             if (user.getEmailAddress().equalsIgnoreCase(emailAddress))
             {
-                user.getID();
+                blnUserFound = true;
             }
         }
 
-        return userID;
+        return blnUserFound;
     }
 
     @Override
-    public String RecoveryQuestion(Long ID)
+    public String RecoveryQuestion(String emailAddress)
     {
-        User user = repositoryUser.findOne(ID);
-        return user.getRecoveryQuestion();
+        String recoveryA = "";
+        Iterable<User> users = repositoryUser.findAll();
+        for (User user : users) {
+            if (user.getEmailAddress().equalsIgnoreCase(emailAddress))
+            {
+                recoveryA = user.getRecoveryQuestion();
+            }
+        }
+
+        return recoveryA;
     }
 
     //This function is called after the recoveryQuestion function returns a true value
     @Override
-    public boolean RecoveryAnswer(String recoveryAnswer, Long ID)
+    public boolean RecoveryAnswer(String emailAddress, String recoveryAnswer)
     {
-        boolean blnCorrectAnswer;
-        User user = repositoryUser.findOne(ID);
-        if (user.getRecoveryAnswer().equalsIgnoreCase(recoveryAnswer))
-        {
-            blnCorrectAnswer = true;
+        boolean blnCorrectAnswer = false;
+
+        Iterable<User> users = repositoryUser.findAll();
+        for (User user : users) {
+            if (user.getEmailAddress().equalsIgnoreCase(emailAddress))
+            {
+                if(user.getRecoveryAnswer().equalsIgnoreCase(recoveryAnswer)){
+                    blnCorrectAnswer = true;
+                }
+            }
         }
-        else
-        {
-            blnCorrectAnswer = false;
-        }
+
         return blnCorrectAnswer;
     }
 
     @Override
-    public boolean ChangePassword(String password, Long ID)
+    public boolean ChangePassword(String emailAddress, String password)
     {
-        boolean blnPasswordChange = true;
-        User user = repositoryUser.findOne(ID);
-        User newUser = new User.Builder(user.getEmailAddress())
-                .ID(ID)
-                .password(password)
-                .recoveryQuestion(user.getRecoveryQuestion())
-                .recoveryAnswer(user.getRecoveryAnswer())
-                .build();
-        repositoryUser.save(newUser);
+        boolean blnPasswordChange = false;
 
+        Iterable<User> users = repositoryUser.findAll();
+        for (User user : users) {
+            if (user.getEmailAddress().equalsIgnoreCase(emailAddress))
+            {
+                User newUser = new User.Builder(user.getEmailAddress())
+                        .ID(user.getID())
+                        .password(password)
+                        .recoveryQuestion(user.getRecoveryQuestion())
+                        .recoveryAnswer(user.getRecoveryAnswer())
+                        .build();
+                repositoryUser.save(newUser);
+                blnPasswordChange = true;
+            }
+        }
         return blnPasswordChange;
+    }
+
+    @Override
+    public boolean UnregisterUserAccount(String emailAddress)
+    {
+        boolean blnUserUnregistered = false;
+        Long userID = 0L;
+
+        Iterable<User> users = repositoryUser.findAll();
+        for (User user : users) {
+            if (user.getEmailAddress().equalsIgnoreCase(emailAddress)) {
+                blnUserUnregistered = true;
+                userID = user.getID();
+            }
+        }
+
+        if (blnUserUnregistered == true){
+            repositoryUser.delete(userID);
+        }
+
+        return blnUserUnregistered;
     }
 }

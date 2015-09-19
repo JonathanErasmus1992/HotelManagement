@@ -22,7 +22,7 @@ public class UserAPI {
     private UserService userService;
 
     //Get All Users
-    @RequestMapping(value = "/user/all", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/all", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<User>> getAllUsers(){
         List<User> userList = userService.getAllUsers();
         return new ResponseEntity<List<User>>(userList, HttpStatus.OK);
@@ -40,7 +40,7 @@ public class UserAPI {
     }
 
     //Create a new user
-    @RequestMapping(value = "/add", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/add", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> newUser(@RequestParam String emailAddress,
                                            @RequestParam String password,
                                            @RequestParam String recoveryQ,
@@ -56,44 +56,54 @@ public class UserAPI {
 
     //Return forgotten password id
     @RequestMapping(value = "/forgotpassword", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Long> forgotPassword(@RequestParam String emailAddress)
+    public ResponseEntity<Boolean> forgotPassword(@RequestParam String emailAddress)
     {
-        Long userFound = 0L;
+        boolean blnUserFound = false;
 
-        userFound = userService.ForgottenPassword(emailAddress);
+        blnUserFound = userService.ForgottenPassword(emailAddress);
 
-        return new ResponseEntity<Long>(userFound, HttpStatus.OK);
+        return new ResponseEntity<Boolean>(blnUserFound, HttpStatus.OK);
     }
 
     @RequestMapping(value = "/recoveryquestion", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<String> recoveryQuestion(@RequestParam Long userID)
+    public ResponseEntity<String> recoveryQuestion(@RequestParam String emailAddress)
     {
         String strRecoveryQ = "";
 
-        strRecoveryQ = userService.RecoveryQuestion(userID);
+        strRecoveryQ = userService.RecoveryQuestion(emailAddress);
 
         return new ResponseEntity<String>(strRecoveryQ, HttpStatus.OK);
     }
 
     @RequestMapping(value = "/recoveryanswer", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Boolean> recoveryAnswer(@RequestParam String recoveryAnswer,
-                                                  @RequestParam Long userID)
+    public ResponseEntity<Boolean> recoveryAnswer(@RequestParam String emailAddress,
+                                                  @RequestParam String recoveryAnswer)
     {
         boolean blnCorrectAnswer = false;
 
-        blnCorrectAnswer = userService.RecoveryAnswer(recoveryAnswer, userID);
+        blnCorrectAnswer = userService.RecoveryAnswer(emailAddress, recoveryAnswer);
 
         return new ResponseEntity<Boolean>(blnCorrectAnswer, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/changepassword", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Boolean> changePassword(@RequestParam String password,
-                                                  @RequestParam Long userID)
+    @RequestMapping(value = "/changepassword", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Boolean> changePassword(@RequestParam String emailAddress,
+                                                  @RequestParam String password)
     {
         boolean blnChangePassword = false;
 
-        blnChangePassword = userService.ChangePassword(password, userID);
+        blnChangePassword = userService.ChangePassword(emailAddress, password);
 
         return new ResponseEntity<Boolean>(blnChangePassword, HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "/unregister", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Boolean> unregisterUser(@RequestParam String emailAddress)
+    {
+        boolean blnUserUnregistered = false;
+
+        blnUserUnregistered = userService.UnregisterUserAccount(emailAddress);
+
+        return new ResponseEntity<Boolean>(blnUserUnregistered, HttpStatus.OK);
     }
 }

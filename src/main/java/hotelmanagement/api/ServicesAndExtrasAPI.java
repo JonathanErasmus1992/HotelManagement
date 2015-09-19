@@ -29,8 +29,8 @@ public class ServicesAndExtrasAPI {
         return new ResponseEntity<List<ServicesAndAddOns>>(servicesAndAddOnsList, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/create", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Void> createServiceAndExtra(@RequestParam int SEID,
+    @RequestMapping(value = "/create", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Boolean> createServiceAndExtra(@RequestParam int SEID,
                                                          @RequestParam String extraName,
                                                          @RequestParam double price)
     {
@@ -38,10 +38,10 @@ public class ServicesAndExtrasAPI {
 
         blnServiceAndExtraCreated = servicesAndAddOnsService.createServicesAndAddOns(SEID, extraName, price);
 
-        return new ResponseEntity<Void>(HttpStatus.OK);
+        return new ResponseEntity<Boolean>(blnServiceAndExtraCreated, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/update", method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/update", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> updateServiceAndExtra(@RequestParam int SEID,
                                                          @RequestParam String extraName,
                                                          @RequestParam double price)
@@ -53,7 +53,7 @@ public class ServicesAndExtrasAPI {
         return new ResponseEntity<Boolean>(blnServiceAndExtraUpdated, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/delete", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/delete", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> deleteServiceAndExtra(@RequestParam int SEID)
     {
         boolean blnServiceAndExtraDeleted = false;

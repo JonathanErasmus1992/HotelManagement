@@ -30,7 +30,7 @@ public class MakeBookingAPI {
         return new ResponseEntity<List<CustomerBooking>>(customerBookingList, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/create", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/create", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> createCustomerBooking(@RequestParam String referenceNumber,
                                                          @RequestParam String idNumber,
                                                          @RequestParam String firstNames,
@@ -41,6 +41,15 @@ public class MakeBookingAPI {
         blnCustomerBookingCreated = customerBookingService.createCustomerBooking(referenceNumber, idNumber, firstNames, lastName);
 
         return new ResponseEntity<Boolean>(blnCustomerBookingCreated, HttpStatus.OK);
+    }
+    @RequestMapping(value = "/delete", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Boolean> deleteCustomerBooking(@RequestParam String referenceNumber)
+    {
+        boolean blnCustomerBookingDeleted = false;
+
+        blnCustomerBookingDeleted = customerBookingService.deleteCustomerBooking(referenceNumber);
+
+        return new ResponseEntity<Boolean>(blnCustomerBookingDeleted, HttpStatus.OK);
     }
 
 }

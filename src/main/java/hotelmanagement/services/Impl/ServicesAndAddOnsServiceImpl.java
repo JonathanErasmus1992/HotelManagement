@@ -42,7 +42,7 @@ public class ServicesAndAddOnsServiceImpl implements ServicesAndAddOnsService {
         }
         if (count == 0)
         {
-            ServicesAndAddOns servicesAndAddOns = ServicesAndAddOnsFactory.createServicesAndAddOns(0, "Mini Bar", 200);
+            ServicesAndAddOns servicesAndAddOns = ServicesAndAddOnsFactory.createServicesAndAddOns(serv_extras_id, extraName, extraPrice);
             repositoryServicesAndAddOns.save(servicesAndAddOns);
             blnCreateServicesAndAddOn = true;
         }
@@ -101,6 +101,6 @@ public class ServicesAndAddOnsServiceImpl implements ServicesAndAddOnsService {
             repositoryServicesAndAddOns.delete(ID);
         }
 
-        return false;
+        return blnServicesAndAddOnsDelete;
     }
 }
