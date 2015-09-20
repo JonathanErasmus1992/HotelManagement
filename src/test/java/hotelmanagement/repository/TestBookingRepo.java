@@ -24,9 +24,9 @@ import java.util.List;
 @WebAppConfiguration
 public class TestBookingRepo extends AbstractTestNGSpringContextTests {
     private Long id;
-    private List<Room> rooms;
-    private List<Room> roomEX;
-    private List<ServicesAndAddOns> services_and_addons;
+    private String rooms = "Blue";
+    private String roomEX = "Green";
+    private String services_and_addons = "Navy";
     private Date date = new Date();
     @Autowired
     BookingRepo repository;

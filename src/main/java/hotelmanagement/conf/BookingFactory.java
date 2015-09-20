@@ -15,8 +15,8 @@ import java.util.List;
 public class BookingFactory {
 
     public static Booking createBooking(String ref_num,
-                                        List<Room> rooms,
-                                        List<ServicesAndAddOns> servicesAndAddOnslist,
+                                        String rooms,
+                                        String servicesAndAddOnslist,
                                         Date hireDate)
     {
         Booking booking = new Booking

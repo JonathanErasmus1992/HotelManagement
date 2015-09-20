@@ -14,7 +14,7 @@ import java.util.List;
 public class TestBookingFactory {
     private Booking booking;
     private Booking newBooking;
-    private List<Room> rooms;
+    private String rooms;
     @Before
     public void setUp()
     {

@@ -14,8 +14,12 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 @RestController
 @RequestMapping(value="/booking/**")
@@ -35,13 +39,24 @@ public class BookingAPI {
     //respective lists
     @RequestMapping(value = "/create", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> createBooking(@RequestParam String referenceNumber,
-                                                 @RequestParam List<Room> roomList,
-                                                 @RequestParam List<ServicesAndAddOns> servicesAndAddOnsList,
-                                                 @RequestParam Date hireDate)
+                                                 @RequestParam String rooms,
+                                                 @RequestParam String servicesAndExtras,
+                                                 @RequestParam String strHireDate)
     {
         boolean blnBookingCreated = false;
 
-        blnBookingCreated = bookingService.createBooking(referenceNumber, roomList, servicesAndAddOnsList, hireDate);
+        DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        Date hireDate = new Date();
+
+        try{
+            hireDate = format.parse(strHireDate);
+        }
+        catch(ParseException pe)
+        {
+            String errorMessage = "Error: " + pe.toString();
+        }
+
+        blnBookingCreated = bookingService.createBooking(referenceNumber, rooms, servicesAndExtras, hireDate);
 
         return new ResponseEntity<Boolean>(blnBookingCreated, HttpStatus.OK);
     }
@@ -50,12 +65,12 @@ public class BookingAPI {
     //Or remove ServiceAndExtras from the Booking lists
     @RequestMapping(value = "/update", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> updateBooking(@RequestParam String referenceNumber,
-                                                 @RequestParam int roomNumber,
-                                                 @RequestParam int SEID)
+                                                 @RequestParam String rooms,
+                                                 @RequestParam String servicesAndExtras)
     {
         boolean blnUpdateBooking = false;
 
-        blnUpdateBooking = bookingService.updateBooking(referenceNumber, roomNumber, SEID);
+        blnUpdateBooking = bookingService.updateBooking(referenceNumber, rooms, servicesAndExtras);
 
         return new ResponseEntity<Boolean>(blnUpdateBooking, HttpStatus.OK);
 

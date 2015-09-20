@@ -15,12 +15,8 @@ public class Booking implements Serializable
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long ID;
     private String reference_number;
-    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
-    @JoinColumn(name = "booking_id")
-    private List<Room> rooms;
-    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
-    @JoinColumn(name = "booking_id")
-    private List<ServicesAndAddOns> services_and_addons;
+    private String rooms;
+    private String services_and_addons;
     private Date hireDate;
 
     private Booking(){}
@@ -41,11 +37,11 @@ public class Booking implements Serializable
     {
         return reference_number;
     }
-    public List<Room> getRooms()
+    public String getRooms()
     {
         return rooms;
     }
-    public List<ServicesAndAddOns> getServicesAndAddOns()
+    public String getServicesAndAddOns()
     {
         return services_and_addons;
     }
@@ -58,8 +54,8 @@ public class Booking implements Serializable
     {
         private Long ID;
         private String reference_number;
-        private List<Room> rooms;
-        private List<ServicesAndAddOns> services_and_addons;
+        private String rooms;
+        private String services_and_addons;
         private Date hireDate;
 
         public Builder( String reference_number )
@@ -73,12 +69,12 @@ public class Booking implements Serializable
             return this;
         }
 
-        public Builder rooms( List<Room> value )
+        public Builder rooms( String value )
         {
             this.rooms = value;
             return this;
         }
-        public Builder services_and_addons( List<ServicesAndAddOns> value )
+        public Builder services_and_addons( String value )
         {
             this.services_and_addons = value;
             return this;

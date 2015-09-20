@@ -12,8 +12,8 @@ import java.util.List;
  */
 public interface BookingService {
     public List<Booking> getAllBookings();
-    public boolean createBooking(String referenceNumber, List<Room>roomList, List<ServicesAndAddOns> servicesAndAddOnsList, Date hireDate);
-    public boolean updateBooking(String referenceNumber, int roomNumber, int SEID);
+    public boolean createBooking(String referenceNumber, String rooms, String servicesAndExtras, Date hireDate);
+    public boolean updateBooking(String referenceNumber, String rooms, String servicesAndExtras);
     public boolean deleteBooking(String referenceNumber);
 }
 /*

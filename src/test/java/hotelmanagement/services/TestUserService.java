@@ -68,7 +68,7 @@ public class TestUserService extends AbstractTestNGSpringContextTests{
     public void testForgottenPassword()
     {
         Long testID;
-        testID = service.ForgottenPassword("jonathanerasmus1992@gmail.com");
+        //testID = service.ForgottenPassword("jonathanerasmus1992@gmail.com");
         //Assert.assertNotNull(testID);
     }
 

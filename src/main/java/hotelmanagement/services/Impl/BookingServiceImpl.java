@@ -4,6 +4,8 @@ import hotelmanagement.domain.Booking;
 import hotelmanagement.domain.Room;
 import hotelmanagement.domain.ServicesAndAddOns;
 import hotelmanagement.repository.BookingRepo;
+import hotelmanagement.repository.RoomRepo;
+import hotelmanagement.repository.ServicesAndAddOnsRepo;
 import hotelmanagement.services.BookingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,6 +21,8 @@ import java.util.List;
 public class BookingServiceImpl implements BookingService{
     @Autowired
     BookingRepo repositoryBooking;
+    RoomRepo repositoryRoom;
+    ServicesAndAddOnsRepo repositoryServicesAndAddOns;
 
     @Override
     public List<Booking> getAllBookings() {
@@ -32,12 +36,9 @@ public class BookingServiceImpl implements BookingService{
     }
 
     @Override
-    public boolean createBooking(String referenceNumber, List<Room> roomList, List<ServicesAndAddOns> servicesAndAddOnsList, Date hireDate) {
+    public boolean createBooking(String referenceNumber, String rooms, String servicesAndExtras, Date hireDate) {
         int count = 0;
         boolean blnCreateBooking;
-
-        List<Room> tempRoomList = roomList;
-        List<ServicesAndAddOns> tempServicesAndAddOnsList = servicesAndAddOnsList;
 
         Iterable<Booking> bookings = repositoryBooking.findAll();
         for (Booking booking : bookings) {
@@ -49,8 +50,8 @@ public class BookingServiceImpl implements BookingService{
         if(count == 0)
         {
             Booking booking = new Booking.Builder(referenceNumber)
-                    .rooms(tempRoomList)
-                    .services_and_addons(tempServicesAndAddOnsList)
+                    .rooms(rooms)
+                    .services_and_addons(servicesAndExtras)
                     .hireDate(hireDate)
                     .build();
             repositoryBooking.save(booking);
@@ -61,93 +62,32 @@ public class BookingServiceImpl implements BookingService{
         {
             blnCreateBooking = false;
         }
+
         return blnCreateBooking;
     }
 
     @Override
-    public boolean updateBooking(String referenceNumber, int roomNumber, int SEID)
+    public boolean updateBooking(String referenceNumber, String rooms, String servicesAndExtras)
     {
-        Long bookingID = 0L;
-        boolean blnUpdateCustomerBooking = false;
-        boolean blnRoomFound = false;
-        boolean blnServAndExtraFound = false;
-        int indexRoom = -1;
-        int indexServiceAndExtra = -1;
-
-        List<Room> rooms = new ArrayList<Room>();
-        List<ServicesAndAddOns> servicesAndAddOnses = new ArrayList<ServicesAndAddOns>();
-
-        Date hireDate = new Date();
+        boolean blnBookingUpdated = false;
 
         Iterable<Booking> bookings = repositoryBooking.findAll();
         for (Booking booking : bookings) {
             if(booking.getReferenceNumber().equalsIgnoreCase(referenceNumber))
             {
-                bookingID = booking.getID();
-                rooms = booking.getRooms();
-                servicesAndAddOnses = booking.getServicesAndAddOns();
-                hireDate = booking.getDate();
+                Booking newBooking = new Booking.Builder(booking.getReferenceNumber())
+                        .ID(booking.getID())
+                        .rooms(rooms)
+                        .services_and_addons(servicesAndExtras)
+                        .hireDate(booking.getDate())
+                        .build();
+                repositoryBooking.save(newBooking);
+
+                blnBookingUpdated = true;
             }
         }
 
-        for (Room room: rooms)
-        {
-            if(room.getRoomNumber() == roomNumber)
-            {
-                blnRoomFound = true;
-            }
-        }
-
-        for (ServicesAndAddOns servicesAndAddOn: servicesAndAddOnses)
-        {
-            if(servicesAndAddOn.getServExtraID() == SEID)
-            {
-                blnServAndExtraFound = true;
-            }
-        }
-
-        if(blnRoomFound == true)
-        {
-            for(int i = 0; i < rooms.size(); i++)
-            {
-                if(rooms.get(i).getRoomNumber() == roomNumber)
-                {
-                    indexRoom = i;
-                }
-            }
-
-            rooms.remove(indexRoom);
-        }
-
-        if(blnServAndExtraFound == true)
-        {
-            for(int i = 0; i < servicesAndAddOnses.size(); i++)
-            {
-                if(servicesAndAddOnses.get(i).getServExtraID() == SEID)
-                {
-                    indexServiceAndExtra = i;
-                }
-            }
-
-            servicesAndAddOnses.remove(indexServiceAndExtra);
-        }
-
-        if ((blnRoomFound == true) || (blnServAndExtraFound == true))
-        {
-            blnUpdateCustomerBooking = true;
-        }
-
-        if (blnUpdateCustomerBooking == true)
-        {
-            Booking newBooking = new Booking.Builder(referenceNumber)
-                    .ID(bookingID)
-                    .rooms(rooms)
-                    .services_and_addons(servicesAndAddOnses)
-                    .build();
-            repositoryBooking.save(newBooking);
-        }
-
-        return blnUpdateCustomerBooking;
+        return blnBookingUpdated;
     }
 
     @Override
