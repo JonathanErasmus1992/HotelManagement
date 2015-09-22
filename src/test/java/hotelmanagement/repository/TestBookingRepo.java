@@ -59,7 +59,7 @@ public class TestBookingRepo extends AbstractTestNGSpringContextTests {
         repository.save(newBooking);
 
         Booking updatedBooking = repository.findOne(id);
-        Assert.assertNull(roomEX);
+        Assert.assertEquals("Green", roomEX);
     }
     @Test(dependsOnMethods = "testUpdate")
     public void testDelete() throws  Exception {
